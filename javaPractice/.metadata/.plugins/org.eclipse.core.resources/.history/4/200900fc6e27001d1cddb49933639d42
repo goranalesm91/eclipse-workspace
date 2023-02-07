@@ -1,0 +1,110 @@
+package shoping1;
+import java.util.*;
+
+ class product{
+
+	static   int Mangoes=50;
+	static   int Apple=100;
+	static   int Greps=60;
+	static int papaya=50;
+	static   int Banana=50;
+	static   int orange=50;
+	
+	
+	  static int final1=0;
+	 
+	 public void product1(int n) {
+		 if(n==1) {
+		 furite();
+		 }
+	 }
+	 public void furite() {
+			System.out.println(" 125 ---- Mangoes ---- 1 Kg is 50\n 126 ---- Apples ---- 1 Kg is 100\n 127 ---- Grapes ---- 1 Kg is 60\n 128 ---- Papaya ---- 1 Kg is 50\n 129 ---- Bananans ---- 1 Kg is 50\n 130 ---- Oranges ---- 1 Kg is 50");
+			System.out.println("Please enter your choice ");
+			}
+	 
+	 public void namefr(int n) {
+	 if(n==125) {
+			System.out.println(" mango is good choice . How much kgs you need ?");
+
+		}else if(n==126) {
+			System.out.println(" Apple is good choice . How much kgs you need ?");
+
+		
+	 }else if(n==126) {
+			System.out.println(" greaps is good choice . How much kgs you need ?");
+
+		 }else if(n==127) {
+			System.out.println(" papaya is good choice . How much kgs you need ?");
+			
+			
+		 }else if(n==128) {
+				System.out.println(" banana is good choice . How much kgs you need ?");
+				
+		 }else if(n==129) {
+				System.out.println(" orange is good choice . How much kgs you need ?");
+		 }else  {
+				System.out.println(" enter currect choice");
+	 }
+ }
+	 public void namefr1(int code,int kg) {
+		 if(code==125) {
+			 int total=Mangoes*kg;
+			 final1+=total;
+		 }
+		 if(code==126) {
+			 int total=Apple*kg;
+			 final1+=total;
+		 }
+		 if(code==127) {
+			 int total=Greps*kg;
+			 final1+=total;
+		 }
+		 
+		 if(code==128) {
+			 int total=papaya*kg;
+			 final1+=total;
+		 }
+		 if(code==129) {
+			 int total=Banana*kg;
+			 final1+=total;
+		 }
+		 if(code==130) {
+			 int total=orange*kg;
+			 final1+=total;
+		 }
+		 
+	 }
+	 
+ }
+public class main {
+	public static void main(String args[]) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println(" ===== WELCOME TO SHREE RAM SAI MART =====");
+		System.out.println("-------------------------------------------");
+		System.out.println("---- Available product in the store---- ");
+		System.out.println(" 1 Friuits\n 2 Vegetables\n 3 Cosmetics\n 4 Masala Powders\n 5 exit");
+		System.out.println("Please enter your choice ");
+		product p =new product();
+		int choice = sc.nextInt();
+		while(true) {
+		if(choice>0 && choice<=4) {
+		 p.product1(choice);
+		 int id=sc.nextInt();
+		 p.namefr(id);
+		 int kg=sc.nextInt();
+		 p.namefr1(id,kg);
+		 
+		}else if(choice==5) {
+			System.out.println(final1);
+			System.exit(0);
+			
+		}else {
+			System.out.println("Enter currect choice");
+		}
+		}
+  
+}
+
+	
+}

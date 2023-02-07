@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;multithreadApllication.staticv.java&apos; to &apos;StatisticsServer.java&apos;&#x0D;&#x0A;- Original project: &apos;Practice1&apos;&#x0D;&#x0A;- Original element: &apos;multithreadApllication.staticv.java&apos;&#x0D;&#x0A;- Renamed element: &apos;multithreadApllication.StatisticsServer.java&apos;" description="Rename compilation unit &apos;staticv.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;multithreadApllication{staticv.java" name="StatisticsServer.java" references="false" stamp="1662608045786" version="1.0"/>
+</session>

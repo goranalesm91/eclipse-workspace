@@ -1,0 +1,17 @@
+package com.Collection;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class queueInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   Queue que=new LinkedList();
+   que.add(30);
+   que.add(45);
+   que.add(60);
+   System.out.println(que);
+	}
+
+}

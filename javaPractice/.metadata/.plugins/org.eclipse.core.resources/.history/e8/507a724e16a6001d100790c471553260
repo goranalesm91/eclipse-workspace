@@ -1,0 +1,28 @@
+package com.jdbc;
+
+import java.util.Scanner;
+
+public class first {
+
+	public static void main(String[] args) throws Exception {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome in siddhu collage");
+		
+		System.out.println("Enter the Student FirstName");
+		
+		String first_name=sc.next();
+		System.out.println("Enter the Student Last Name");
+		
+		String Last_name=sc.next();
+			System.out.println("Enter the Student Date_Of_Birth");
+		
+		String Date_Of_Birth=sc.next();
+		
+		Student s=new Student(first_name, Last_name, Date_Of_Birth);
+		
+		CreateConnection c=new CreateConnection();
+		c.getConnections(s);
+            
+	}
+
+}

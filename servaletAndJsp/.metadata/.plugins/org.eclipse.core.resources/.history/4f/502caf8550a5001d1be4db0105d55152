@@ -1,0 +1,27 @@
+package com.cookes;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("/servalet1")
+public class servalet1 extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String na=req.getParameter("nam");
+		PrintWriter out=resp.getWriter();
+		
+		resp.setContentType("text/html");
+		Cookie ko=new Cookie("sham", na);
+		resp.addCookie(ko);
+		out.print(" <h1>name in servalet 1 name = " +na+"</h1>");
+		
+		out.print("<a href='seravalet2'>clic to xcall servalet 2<a>");
+	}
+
+}

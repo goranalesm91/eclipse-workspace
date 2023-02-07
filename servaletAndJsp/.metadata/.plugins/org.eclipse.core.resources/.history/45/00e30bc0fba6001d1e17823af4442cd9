@@ -1,0 +1,28 @@
+package com.student;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCC_Connection {
+	String name;
+	String number;
+	String Email;
+	String DOB;
+	static Connection con;
+	public JDBCC_Connection(String name, String number, String email, String dOB) {
+		super();
+		this.name = name;
+		this.number = number;
+		Email = email;
+		DOB = dOB;
+	}
+	{
+try {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Students", "roor", "Siddhu@123");
+}catch (Exception e) {
+	System.out.println("eroor on server");
+}
+	   
+}
+}

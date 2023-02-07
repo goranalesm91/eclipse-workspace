@@ -1,0 +1,19 @@
+package com.thread;
+
+public class MyThread extends Thread {
+	public void run() {
+		for(int i=0;i<5;i++){
+			System.out.println("run method run");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        MyThread th=new MyThread();
+        th.start();
+        for(int i=0;i<5;i++) {
+        	System.out.println("main method run");
+        }
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.ecxeption;
+
+public class tryCatch {
+
+	public static void main(String[] args) throws ArithmeticException {
+    int num=10;
+    try {
+    	System.out.println(num/0);
+    }catch (Exception e) {
+		System.out.println(num/2);
+	}
+    int b=10/0;
+    System.out.print(false);
+	}
+
+}

@@ -1,0 +1,15 @@
+package shoping1;
+
+import java.util.Scanner;
+
+public class order {
+ public static void main(String []agr) {
+	 int i=0;
+	 int ar[]=new int[i];
+    Scanner sc=new Scanner(System.in);
+    for(int j=0;j<5;j++) {
+    	ar[i]=sc.nextInt(); 
+       i++;
+    	}
+ }
+}

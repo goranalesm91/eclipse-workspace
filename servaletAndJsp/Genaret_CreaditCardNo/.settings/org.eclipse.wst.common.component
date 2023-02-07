@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Genaret_CreaditCardNo">
+        <wb-resource deploy-path="/" source-path="/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java"/>
+        <property name="context-root" value="Genaret_CreaditCardNo"/>
+        <property name="java-output-path" value="/Genaret_CreaditCardNo/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,39 @@
+package shoping1;
+import java.util.*;
+
+ class product{
+	 
+	 public void product1(int n) {
+		 
+	 }
+	 
+	 
+	 
+	 
+ }
+public class main {
+	public static void main(String args[]) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println(" ===== WELCOME TO SHREE RAM SAI MART =====");
+		System.out.println("-------------------------------------------");
+		System.out.println("---- Available product in the store---- ");
+		System.out.println(" 1 Friuits\n 2 Vegetables\n 3 Cosmetics\n 4 Masala Powders");
+		System.out.println("Please enter your choice ");
+		product p =new product();
+		int choice = sc.nextInt();
+		if(choice>0 && choice<=4) {
+		 p.product1(choice);
+		
+		}{
+			System.out.println("Enter currect choice");
+		}
+	
+		
+  
+  
+  
+  
+  
+  
+}
+}

@@ -1,0 +1,21 @@
+package com.cookes;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class servalet1 extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String name=req.getParameter("em");
+		PrintWriter out=resp.getWriter();
+		out.println(" name in servalet 1:" +name);
+		
+		out.print("<a href='seravalet2'><a>");
+	}
+
+}

@@ -1,0 +1,13 @@
+package oopsConcept;
+
+public class pawerPrinting {
+	public static void main(String args[]) {
+	int n=3;
+	int pav=4;
+System.out.println(pawer(n,pav));
+	}
+	public static int pawer(int n,int pav) {
+		if(pav==0) return 1;
+		return n*pawer(n,pav-1);
+	}
+}

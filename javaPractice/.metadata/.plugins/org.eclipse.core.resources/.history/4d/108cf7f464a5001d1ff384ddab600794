@@ -1,0 +1,20 @@
+package com.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class first {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/banking","root","Siddhu@123");
+			System.out.println("connection");
+		} catch (Exception e) {
+			e.printStackTrace();
+//			System.out.println("error");
+		}
+
+	}
+
+}

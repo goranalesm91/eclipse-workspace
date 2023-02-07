@@ -1,0 +1,44 @@
+package shoping1;
+import java.util.*;
+
+ class product{
+	 
+	 public void product1(int n) {
+		 if(n==1) {
+		 furite();
+		 }
+	 }
+	 public void furite() {
+			System.out.println(" 125 ---- Mangoes ---- 1 Kg is 50\n 126 ---- Apples ---- 1 Kg is 100\n 127 ---- Grapes ---- 1 Kg is 60\n 128 ---- Papaya ---- 1 Kg is 50\n 129 ---- Bananans ---- 1 Kg is 50\n 130 ---- Oranges ---- 1 Kg is 50");
+			System.out.println("Please enter your choice ");
+			}
+	 
+	 
+	 
+ }
+public class main {
+	public static void main(String args[]) {
+     Scanner sc=new Scanner(System.in);
+     System.out.println(" ===== WELCOME TO SHREE RAM SAI MART =====");
+		System.out.println("-------------------------------------------");
+		System.out.println("---- Available product in the store---- ");
+		System.out.println(" 1 Friuits\n 2 Vegetables\n 3 Cosmetics\n 4 Masala Powders");
+		System.out.println("Please enter your choice ");
+		product p =new product();
+		int choice = sc.nextInt();
+		if(choice>0 && choice<=4) {
+		 p.product1(choice);
+		
+		}else{
+			System.out.println("Enter currect choice");
+		}
+	
+		
+  
+  
+  
+  
+  
+  
+}
+}

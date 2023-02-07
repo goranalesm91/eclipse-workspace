@@ -1,0 +1,32 @@
+package shoping1;
+
+//import java.util.Scanner;
+//import java.util.Stack;
+import java.util.TreeSet;
+
+public class order {
+ public static void main(String []agr) {
+// Scanner sc=new Scanner(System.in);
+// Stack<Integer>st=new Stack<>();
+// int n=5;
+// for(int i=0;i<5;i++) {
+//	 st.push(sc.nextInt());
+// }
+// System.out.println(st);
+// System.out.println(st.pop());
+// System.out.println(st.search(5)+"idex");
+// System.out.println(st.empty());
+ TreeSet<Integer> ts=new TreeSet<>();
+ 
+ ts.add(10);
+ ts.add(40);
+ ts.add(2);
+ ts.add(1);
+ System.out.println(ts);
+ for(int i=0;i<5;i++) {
+	 ts.add(5-i);
+ }
+ System.out.println(ts);
+ System.out.println("A".compareTo("10000"));
+ }
+}

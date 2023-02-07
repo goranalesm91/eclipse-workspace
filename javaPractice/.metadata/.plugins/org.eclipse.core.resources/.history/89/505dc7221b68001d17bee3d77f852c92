@@ -1,0 +1,28 @@
+package oopsConcept;
+
+public class myThread extends Thread {
+	static int x=0;
+	public void run() {
+		int n=5;
+		while(n>0) {
+			x++;
+			n--;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		myThread th=new myThread();
+         
+		th.start();
+		int n=10;
+		
+		while(n>0) {
+			System.out.println(x);
+			n--;
+		}
+		
+		
+	}
+
+}

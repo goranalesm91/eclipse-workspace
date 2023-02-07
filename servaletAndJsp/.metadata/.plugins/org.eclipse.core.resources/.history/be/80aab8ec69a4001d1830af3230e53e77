@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="servalet1"> 
+
+<label>Name</label> 
+<input type="text" name="na">
+<button type="submit"> click servalet1</button>
+</form>
+
+</body>
+</html>
